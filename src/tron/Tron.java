@@ -28,7 +28,10 @@ public class Tron extends JFrame implements Runnable, KeyListener
     }
     Status status;
     long statusTime=0;
+    static int SCWIDTH = 1200;
+    static int SCLENGTH = 750;
     double sleep;
+    double scale;
     long lastTime;
     public Tron()
     {
@@ -109,7 +112,7 @@ public class Tron extends JFrame implements Runnable, KeyListener
         if (status==Status.Run || status==Status.OneStep)
         {
             g2.setColor(Color.BLACK);
-            g2.fillRect(0,0,1200,1000);
+            g2.fillRect(0,0,SCWIDTH,SCLENGTH);
             Square.drawAll(g2);
             for (int n=0;n<Bike.amt();n++)
             {
@@ -135,7 +138,7 @@ public class Tron extends JFrame implements Runnable, KeyListener
             Color c=Bike.getColor(winner);
             c=new Color(c.getRed(),c.getGreen(),c.getBlue(),100);
             g2.setColor(c);
-            g2.fillRect(0,0,1200,1000);
+            g2.fillRect(0,0,SCWIDTH,SCLENGTH);
             g2.setColor(Color.BLACK);
             g2.setFont(new Font("Arial",Font.BOLD,90));
             if (winner!=-1)
@@ -147,7 +150,7 @@ public class Tron extends JFrame implements Runnable, KeyListener
         {
             
             g2.setColor(Color.BLACK);
-            g2.fillRect(0,0,1200,1000);
+            g2.fillRect(0,0,SCWIDTH,SCLENGTH);
             Square.drawAll(g2);
             for (int n=0;n<Bike.amt();n++)
             {
@@ -267,7 +270,7 @@ public class Tron extends JFrame implements Runnable, KeyListener
     {
         Tron frame = new Tron();
 
-        frame.setSize(1200, 1000);
+        frame.setSize(SCWIDTH,SCLENGTH);
         frame.setVisible(true);
     }
     

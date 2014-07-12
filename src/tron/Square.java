@@ -44,7 +44,7 @@ public class Square
         gx=x;
         gy=y;
         px=gx*SQUARE_SIZE+20;
-        py=gy*SQUARE_SIZE+60;
+        py=gy*SQUARE_SIZE+40;
         taken=-1;
     }
     public void draw(Graphics2D g)
@@ -220,7 +220,7 @@ public class Square
     public static void onStart()
     {//Not for you
         prechecked=new ArrayList<Square>();
-        grid=new Square[1160/SQUARE_SIZE][900/SQUARE_SIZE];
+        grid=new Square[1160/SQUARE_SIZE][700/SQUARE_SIZE];
         System.out.println("Grid size = "+grid.length+" X "+grid[0].length);
         for (int x=0;x<grid.length;x++)
         {
