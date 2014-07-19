@@ -91,7 +91,7 @@ public class Tron extends JFrame implements Runnable, KeyListener
                 Bike.get(n).update();
             }
         }
-        if (amtAlive<=0)
+        if (amtAlive<=1)
         {
             status=Status.Win;
             for (int n=0;n<Bike.amt();n++)
@@ -158,7 +158,7 @@ public class Tron extends JFrame implements Runnable, KeyListener
             }
             Draw.drawList(g2,false);
             g2.setColor(Color.WHITE);
-            g2.drawString("Paused",500,500);
+            g2.drawString("Paused",500,450);
             
         }
         g2.dispose();

@@ -226,10 +226,10 @@ public abstract class Bike {
         Keep the directions as they are or the bikes might immidiately crash
         Don't call this from your own code
     */
-        bikes.add(new AggroBike(Square.northWest(),Dir.East));
-        bikes.add(new PlayerBike(Square.northEast(),Dir.South));
-        bikes.add(new Tourist(Square.southEast(),Dir.West));
-        bikes.add(new TronPaul(Square.southWest(),Dir.North));
+        bikes.add(new PlayerBike(Square.northWest(),Dir.East));
+        bikes.add(new NextGenBike(Square.northEast(),Dir.South));
+        bikes.add(new Robobike(Square.southEast(),Dir.West));
+        bikes.add(new MapHugger(Square.southWest(),Dir.North));
         
     }
     public static void resetAll()

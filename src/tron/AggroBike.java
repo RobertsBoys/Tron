@@ -179,7 +179,7 @@ public class AggroBike extends Bike
     protected Space getSpace(Square loc)
     {
         if (loc.isError()) {
-            System.out.println("Loc is error");
+            System.out.println("Loc is error AB");
             loc=null;
             System.out.println(loc.toString());
         }
