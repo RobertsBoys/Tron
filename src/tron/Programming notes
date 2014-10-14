@@ -1,0 +1,9 @@
+5 Oct: Working on analyzing 5x5 matrix and deciding how to move.
+I have a Path class define that allows storing prospective paths for future comparison.
+It is difficult to decide what to store for turns or direction.  L, F, R / -1, 0, 1 / direction...
+
+9 Oct: I have done the logic for Left, Forward, Right based on abstract moves.
+Next is to evaluate the 'complete' Paths and see if a good one starts with a left
+(a score for the Paths will come later)
+A while loop while Path.complete = true, ....
+I am having trouble sending the tactical two-dimensional array back ...

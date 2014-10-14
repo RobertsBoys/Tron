@@ -227,8 +227,8 @@ public abstract class Bike {
         Don't call this from your own code
     */
         bikes.add(new PlayerBike(Square.northWest(),Dir.East));
-        bikes.add(new NextGenBike(Square.northEast(),Dir.South));
-        bikes.add(new Robobike(Square.southEast(),Dir.West));
+        bikes.add(new ObliviousBike(Square.northEast(),Dir.South));
+        bikes.add(new NextGenBike(Square.southEast(),Dir.West));
         bikes.add(new MapHugger(Square.southWest(),Dir.North));
         
     }
