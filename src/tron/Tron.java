@@ -82,7 +82,7 @@ public class Tron extends JFrame implements Runnable, KeyListener
     {
         Util.onFrame();
         int amtAlive=0;
-        Robobike.updateMap();
+ //       Robobike.updateMap();
         for (int n=0;n<Bike.amt();n++)
         {
             if (Bike.get(n).isAlive())
